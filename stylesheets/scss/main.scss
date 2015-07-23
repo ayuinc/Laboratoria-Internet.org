@@ -1,11 +1,256 @@
+@import 'normalize';
 @import 'variables';
 
-.container{
-	max-width: 320px;
+@charset "utf-8";
+/* CSS Document */
+html, body { -webkit-text-size-adjust: none; }
+*, *:before, *:after { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+:focus { outline: none; }
+body {
+	font: 95%/1.5 Arial, Helvetica, Verdana,sans-serif;
+	background-color: #f0f0f0;
+	margin: 0 auto;
+	padding: 0;
+	color: rgb(38, 38, 36);
+	word-break: break-word;
+	/*max-width:320px;*/
+}
+
+@media screen and (min-width: 1024px) { 
+        html {
+            background-color: #f0f0f0;
+        }
+        body {
+            max-width: 320px;
+            margin: 0 auto;
+        }
+}
+
+ul, ol, dl { 
+	padding: 0;
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 
+	padding-right: 2%;
+	padding-left: 2%; 
+}
+
+a img { 
+	border: none;
+}
+
+a:link {
+	color: $yellow;
+	text-decoration: none; 
+}
+
+a:visited {
+	color: $yellow;
+	text-decoration: none;
+}
+
+a:hover, a:active, a:focus { 
+	text-decoration: none;
+}
+
+img
+{
+	border:none;
+}
+
+.container {
+	width: 100%;
+	background-color: #FFF;
 	margin: 0 auto;
 }
 
-header{
-	color: $yellow;
-	min-height: 100px;
+.content p,h1,h2,h3 {
+	padding:0 15px;
 }
+
+//Sections
+
+header{
+	padding-top:6%;
+	padding-bottom:4%;
+	border-bottom: 1.5px solid #dbdbdb;
+	img{
+		width: 60%;
+	}
+}
+
+.hero-image{
+
+}
+
+.about{
+	margin: 0 auto;
+	padding-bottom: 7%;
+
+	.cosas-que-ensenamos{
+		width: 70%;
+		margin: 0 auto;
+		.ensenanza{
+			$border: 2px;
+			text-align: center;
+			margin-bottom: 5%;
+			min-height: 180px;
+			padding: 20% 0 10% 0;  
+			img{
+				padding-bottom: 5%;
+			}
+			&.purple{
+				$purple: #834871; 
+				color: $purple;
+				border: $border solid $purple;
+			}
+
+			&.aqua{
+				$aqua: #72D0CB; 
+				color: $aqua;
+				border: $border solid $aqua;
+			}
+
+			&.orange{
+				$orange: #EEAA68;
+				color: $orange;
+				border: $border solid $orange;
+			}
+
+			&.gray{
+				$gray: #D1D3D4;
+				color: $gray;
+				border: $border solid $gray;
+			}
+		}
+	}
+
+
+}
+
+.que-queremos-cambiar{
+	.problematica{
+		margin-top: 7%;
+		margin-bottom: 10%;		
+		img{
+			width: 60%;
+			margin-bottom: 2%;
+		}
+		h3{
+			font-size: 2em;
+			margin-bottom: 2%;
+			color: $laboratoria-yellow;
+		}
+		
+	}
+}
+
+.como-hago-para-postular{
+	.descripcion{
+		padding: 5% 0;
+	}
+}
+
+.social{
+	padding: 4% 2%;
+	color: white;
+	background-color: $gray;
+	.icon{
+		width: 52px;
+	  height: 52px;
+	  display: inline-block;
+	  margin-left: 2%;
+		&.facebook{
+		  background: url(../images/icons/social.png) no-repeat -6px -3px;
+		}
+		&.twitter{
+			background: url(../images/icons/social.png) no-repeat -233px -3px;
+		}
+		&.instagram{
+			background: url(../images/icons/social.png) no-repeat -289px -3px;
+		}
+		&.youtube{
+			background: url(../images/icons/social.png) no-repeat -119px -3px;
+		}
+	}
+
+}
+
+footer {
+	padding: 5px 0;
+	text-align:center;
+	font-size:10pt;
+	img{
+		width: 12%;
+	}
+	a{
+		color: rgb(38, 38, 36) !important; 
+		&:hover{
+			text-decoration: underline !important;
+		}
+	}
+}
+
+
+
+// Reusable UI
+
+.button{
+	color:#ff8974;
+	font-size:15pt;
+	border-radius:1pt;
+}
+
+.banner{
+	background-color: $yellow;
+	color: #ffffff;
+	margin:0;
+	text-align:center;
+	padding:2% 0;
+	margin-bottom: 6%;
+	h1, h2, h3{
+		margin: 0;
+	}
+}
+
+.separator-line {
+  padding-left: 0;
+  list-style: none;
+  padding-top: 4%;
+  padding-bottom: 5%;
+  margin: 0; }
+  .separator-line li:first-child, .separator-line li:last-child {
+    height: 3px;
+    margin: 0 auto;
+    background: rgba(250, 198, 14, 0.3);
+    margin-bottom: 7px; }
+  .separator-line li:first-child {
+    width: 70px; }
+  .separator-line li:last-child {
+    width: 49px; }
+  .separator-line.separator-white li:first-child, .separator-line.separator-white li:last-child {
+    background: white; }
+
+
+// Utilities
+
+.text-center{
+	text-align: center;
+}
+
+.width-100-percentage{
+	width: 100%;
+}
+
+.separator { //hack for removing space after image
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+.m-0{
+	margin: 0 !important;
+}
+
