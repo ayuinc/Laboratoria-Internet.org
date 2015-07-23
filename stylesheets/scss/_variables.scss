@@ -1,7 +1,13 @@
+@import 'fonts';
+
+
+//Colors
 $yellow: rgba(250, 198, 14, 0.9);
 $laboratoria-yellow: #FAA819; 
 $gray: #3C3C3B;
 $black: #3C3C3B;
 $light-gray: #ECF0F1;
 
-
+//Typography
+$font-bold: "Museo Sans 500", Arial, Helvetica, Verdana,sans-serif;
+$font-normal: 95%/1.5 'Museo Sans 300', Arial, Helvetica, Verdana,sans-serif;
