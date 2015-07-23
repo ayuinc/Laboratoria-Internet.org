@@ -1,0 +1,19 @@
+// Utilities
+
+.text-center{
+	text-align: center;
+}
+
+.width-100-percentage{
+	width: 100%;
+}
+
+.separator { //hack for removing space after image
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+.m-0{
+	margin: 0 !important;
+}

@@ -1,5 +1,6 @@
-@import 'normalize';
 @import 'variables';
+@import 'utilities';
+@import 'fonts';
 
 @charset "utf-8";
 /* CSS Document */
@@ -7,7 +8,7 @@ html, body { -webkit-text-size-adjust: none; }
 *, *:before, *:after { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 :focus { outline: none; }
 body {
-	font: 95%/1.5 Arial, Helvetica, Verdana,sans-serif;
+	font: 95%/1.5 'Museo Sans 300', Arial, Helvetica, Verdana,sans-serif;
 	background-color: #f0f0f0;
 	margin: 0 auto;
 	padding: 0;
@@ -163,16 +164,16 @@ header{
 	  display: inline-block;
 	  margin-left: 2%;
 		&.facebook{
-		  background: url(../images/icons/social.png) no-repeat -6px -3px;
+		  background: url(../assets/images/icons/social.png) no-repeat -6px -3px;
 		}
 		&.twitter{
-			background: url(../images/icons/social.png) no-repeat -233px -3px;
+			background: url(../assets/images/icons/social.png) no-repeat -233px -3px;
 		}
 		&.instagram{
-			background: url(../images/icons/social.png) no-repeat -289px -3px;
+			background: url(../assets/images/icons/social.png) no-repeat -289px -3px;
 		}
 		&.youtube{
-			background: url(../images/icons/social.png) no-repeat -119px -3px;
+			background: url(../assets/images/icons/social.png) no-repeat -119px -3px;
 		}
 	}
 
@@ -232,25 +233,4 @@ footer {
     width: 49px; }
   .separator-line.separator-white li:first-child, .separator-line.separator-white li:last-child {
     background: white; }
-
-
-// Utilities
-
-.text-center{
-	text-align: center;
-}
-
-.width-100-percentage{
-	width: 100%;
-}
-
-.separator { //hack for removing space after image
-  margin: 0;
-  padding: 0;
-  display: block;
-}
-
-.m-0{
-	margin: 0 !important;
-}
 
